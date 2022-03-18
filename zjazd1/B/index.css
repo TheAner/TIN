@@ -1,0 +1,15 @@
+form, optgroup, option {
+    font-style: normal;
+    font-size: 1,4rem;
+}
+
+label {
+    color:grey;
+    float: left;
+}
+
+input[required] + label:after {
+    content: '*';
+    color: red;
+    margin-right: 1.5em;
+}

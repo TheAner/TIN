@@ -1,0 +1,23 @@
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left-img {
+    float: left;
+}
+
+.right-img {
+    float: right;
+}
+
+p {
+    text-align: justify;
+    padding: 5px;
+}
