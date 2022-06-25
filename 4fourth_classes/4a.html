@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Konwerter temperatur</title>
+    <style>
+        * {
+            font-family: Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        Celcjusze<input type="number" id="cels">
+        <button onclick="convert()" type="button">Konwertuj</button>
+        <div id="res"></div>
+    </form>
+
+    <script>
+        function convert() {
+            let value = document.getElementById('cels').value;
+            let result = value * 9 / 5 + 32;
+            document.getElementById('res').innerText = result;
+        }
+    </script>
+</body>
+
+</html>

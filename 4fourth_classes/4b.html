@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dodawanie tekstu</title>
+    <style>
+        * {
+            font-family: Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        Tekst<input type="text" id="text">
+        <button onclick="add()" type="button">Dodaj</button>
+        <div id="res"></div>
+    </form>
+
+    <script>
+        function add() {
+            let text = document.getElementById('text').value;
+            var res = document.getElementById('res')
+            var paragraph = document.createElement("p");
+            paragraph.textContent = text;
+            res.append(paragraph);
+        }
+    </script>
+</body>
+
+</html>
